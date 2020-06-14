@@ -1,6 +1,6 @@
 import praw
 import json
-import yake
+import pandas as pd
 
 def create_reddit_object(json_file="reddit_config.json",json_key="reddit_user_values"):
     with open(json_file) as f:
@@ -15,12 +15,7 @@ def create_reddit_object(json_file="reddit_config.json",json_key="reddit_user_va
 
 reddit=create_reddit_object()
 
-url = "https://www.reddit.com/r/uwaterloo/comments/gomj1g/how_to_get_good_algorithms_and_data_structures/"
-submission = reddit.submission(url=url)
-print(submission.selftext)
-
-submission.comments.replace_more(limit=None)
-for comment in submission.comments.list():
-    print(comment.body)
-
-print(submission.comments.list())
+subred=reddit.subreddit("learnprogramming")
+hot=subred.hot(limit=11)
+for i in hot:
+    print(i.title,i.url)
