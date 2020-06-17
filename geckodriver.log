@@ -453,3 +453,40 @@ IPDL protocol error: Handler returned error code!
 1592356528657	Marionette	INFO	Listening on port 50924
 1592356528760	Marionette	WARN	TLS certificate errors will be ignored for this session
 1592356562031	Marionette	INFO	Stopped listening on port 50924
+1592358124111	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofileCHCmv5"
+1592358126259	Marionette	INFO	Listening on port 51449
+1592358126288	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358129181	Marionette	INFO	Stopped listening on port 51449
+1592358179428	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofile3B3kpd"
+1592358181371	Marionette	INFO	Listening on port 51531
+1592358181392	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358183931	Marionette	INFO	Stopped listening on port 51531
+1592358188335	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofileOmneSi"
+1592358190355	Marionette	INFO	Listening on port 51610
+1592358190391	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358192805	Marionette	INFO	Stopped listening on port 51610
+1592358197223	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofileFZdDvs"
+1592358199102	Marionette	INFO	Listening on port 51690
+1592358199184	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358201680	Marionette	INFO	Stopped listening on port 51690
+1592358205063	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofilehC5HK4"
+1592358206969	Marionette	INFO	Listening on port 51766
+1592358207021	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358209184	Marionette	INFO	Stopped listening on port 51766
+1592358212544	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofilerdbY6H"
+1592358214463	Marionette	INFO	Listening on port 51848
+1592358214506	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358216835	Marionette	INFO	Stopped listening on port 51848
+1592358221237	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofileWihn6w"
+1592358223074	Marionette	INFO	Listening on port 51930
+1592358223101	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358225446	Marionette	INFO	Stopped listening on port 51930
+1592358228827	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofileN0fQy5"
+1592358230715	Marionette	INFO	Listening on port 52006
+1592358230776	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592358233779	Marionette	INFO	Stopped listening on port 52006
+Exiting due to channel error.
+1592363000756	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofile5NEyxP"
+1592363003873	Marionette	INFO	Listening on port 53058
+1592363003889	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592363038000	Marionette	INFO	Stopped listening on port 53058
