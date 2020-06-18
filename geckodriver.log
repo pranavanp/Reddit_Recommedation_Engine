@@ -490,3 +490,7 @@ Exiting due to channel error.
 1592363003873	Marionette	INFO	Listening on port 53058
 1592363003889	Marionette	WARN	TLS certificate errors will be ignored for this session
 1592363038000	Marionette	INFO	Stopped listening on port 53058
+1592449320870	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/f8/jw8d_hfd14l42lvk0bcvcsdr0000gn/T/rust_mozprofile4h9pBl"
+1592449323775	Marionette	INFO	Listening on port 55014
+1592449323836	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592449356359	Marionette	INFO	Stopped listening on port 55014
