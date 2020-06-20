@@ -7,6 +7,8 @@ import yake
 class SearchGenerator:
     def __init__(self, url):
         self.url = url
+        self.reddit = self.create_reddit()
+        self.submission = self.reddit.submission(url=url)
 
     def create_reddit(self, json_file="reddit_config.json", json_key="reddit_user_values"):
         with open(json_file) as f:
@@ -26,7 +28,10 @@ class SearchGenerator:
         return self.submission.selftext
 
     def get_subreddit(self):
-        self.subreddit = self.submission.subreddit
+        return self.submission.subreddit
+
+    def get_reddit(self):
+        return self.reddit
 
     def get_comments(self):
         text = ""
@@ -36,8 +41,6 @@ class SearchGenerator:
         return text
 
     def scrape_submission(self):
-        reddit = self.create_reddit()
-        self.submission = reddit.submission(url=url)
         text = self.get_title()
         text += ' ' + self.get_body()
         if len(text) <= 1000:
@@ -51,10 +54,9 @@ class SearchGenerator:
 
     def extract_keywords(self):
         content= self.get_cleantext(self.scrape_submission())
-        simple_kwextractor = yake.KeywordExtractor(content)
-        keywords = simple_kwextractor.extract_keywords(n=1)
-        return keywords
-
-url = "https://www.reddit.com/r/uwaterloo/comments/gomj1g/how_to_get_good_algorithms_and_data_structures/"
-run=SearchGenerator(url)
-print(run.extract_keywords())
+        kwextractor1 = yake.KeywordExtractor(n=1)
+        keywords1 = kwextractor1.extract_keywords(content)
+        kwextractor2 = yake.KeywordExtractor(n=2)
+        keywords2 = kwextractor2.extract_keywords(content)
+        final=keywords1[:5] + keywords2[:5]
+        return final
