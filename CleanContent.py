@@ -8,11 +8,14 @@ from ThreadScraper import ThreadScraper
 
 class Content:
 
-    def __init__(self, db_file):
-        self.df = pd.read_csv('results.csv')
+    def __init__(self, df,url):
+        self.df = df
         self.cleaner = Cleaner()
 
-    def __iter__(self):
-        for id in self.get_ids():
-            page = self.get_page_by_id(id)
-            yield self.cleaner.clean_text(page).split()
+    def clean_frame(self):
+        self.df=self.df[['Title','Content']].apply(lambda x: self.cleaner.clean_text(x).split())
+        
+url = "https://www.reddit.com/r/uwaterloo/comments/gomj1g/how_to_get_good_algorithms_and_data_structures/"
+c=Content(ThreadScraper(url).export_submission())
+c.clean_frame()
+print(Content.df.to_string())

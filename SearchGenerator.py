@@ -52,6 +52,9 @@ class SearchGenerator:
         cleaned = cleaner.clean_text(text)
         return cleaned
 
+    def get_cleancontent(self):
+        return self.get_cleantext(self.scrape_submission())
+
     def extract_keywords(self):
         content= self.get_cleantext(self.scrape_submission())
         kwextractor1 = yake.KeywordExtractor(n=1)
